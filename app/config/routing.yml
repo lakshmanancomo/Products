@@ -1,0 +1,4 @@
+lakshmanan_catalog:
+    resource: "@LakshmananCatalogBundle/Resources/config/routing.yml"
+    prefix:   /
+

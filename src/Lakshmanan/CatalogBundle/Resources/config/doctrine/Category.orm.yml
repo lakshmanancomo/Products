@@ -1,0 +1,21 @@
+Lakshmanan\CatalogBundle\Entity\Category:
+    type: entity
+    table: null
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        name:
+            type: string
+            length: '255'
+        slug:
+            type: string
+            length: '255'
+    manyToMany:
+        product:
+          targetEntity: Product
+          mappedBy: category
+            
+    lifecycleCallbacks: {  }

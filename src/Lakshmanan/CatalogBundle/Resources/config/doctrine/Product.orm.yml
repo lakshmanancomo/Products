@@ -1,0 +1,42 @@
+Lakshmanan\CatalogBundle\Entity\Product:
+    type: entity
+    table: null
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        name:
+            type: string
+            length: '255'
+        description:
+            type: string
+            length: '255'
+        summary:
+            type: string
+            length: '255'
+        isactive:
+            type: boolean
+        slug:
+            type: string
+            length: '255'
+    manyToOne:                
+         brand:
+            targetEntity: Brand
+            joinColumn:
+                name: brand_id
+                referencedColumnName: id
+    manyToMany:
+        category:
+          targetEntity: Category
+          inversedBy: product
+          joinTable:
+            name: lakshman_catalog_category
+            joinColumns:
+              product_id:
+                referencedColumnName: id
+            inverseJoinColumns:
+              category_id:
+                referencedColumnName: id                
+    lifecycleCallbacks: {  }

@@ -1,0 +1,13 @@
+lakshmanan_catalog_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: LakshmananCatalogBundle:Default:index }
+
+LakshmananCatalogBundle_category:
+    resource: "@LakshmananCatalogBundle/Resources/config/routing/category.yml"
+    prefix:   /category
+LakshmananCatalogBundle_brand:
+    resource: "@LakshmananCatalogBundle/Resources/config/routing/brand.yml"
+    prefix:   /brand
+LakshmananCatalogBundle_product:
+    resource: "@LakshmananCatalogBundle/Resources/config/routing/product.yml"
+    prefix:   /product
