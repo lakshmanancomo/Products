@@ -126,8 +126,8 @@ class Category
         return $this->product;
     }
     
-       public function __toString()
+     public function __toString()
     {
-      return $this->getName();
+        return $this->getName();
     }
 }

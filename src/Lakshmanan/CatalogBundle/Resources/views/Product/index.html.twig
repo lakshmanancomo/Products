@@ -13,6 +13,7 @@
                 <th>Isactive</th>
                 <th>Slug</th>
                 <th>Brand</th>
+                <th>category</th> 
                 <th>Actions</th>
             </tr>
         </thead>
@@ -27,6 +28,10 @@
                 <td>{{ entity.isactive }}</td>
                 <td>{{ entity.slug }}</td>
                 <td>{{ entity.brand }}</td>
+                <td>{% for category in entity.category %}     
+                    {{  category.name }}
+                    {% endfor %}
+                </td>
                 
                 
                 <td>
