@@ -2,3 +2,8 @@ lakshmanan_catalog:
     resource: "@LakshmananCatalogBundle/Resources/config/routing.yml"
     prefix:   /
 
+login:
+    pattern:   /login
+    defaults:  { _controller: LakshmananCatalogBundle:Security:login }
+login_check:
+    pattern:   /login_check

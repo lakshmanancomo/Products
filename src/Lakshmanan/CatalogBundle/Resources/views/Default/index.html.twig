@@ -1,1 +1,26 @@
-Hello {{ name }}!
+
+{% if result %}
+Name {{  result.name }}<br>
+
+Description {{  result.description }}<br>
+
+Summary {{ result.summary }}<br>
+   
+Is Active {{ result.isactive }}<br>
+
+Slug {{ result.slug }}<br>
+
+Brand {{  result.brand }}<br>
+
+{% endif %}
+
+{% if result1 %}
+
+
+{% for key,value in result %}
+   {{  name }}
+
+{% endfor %}
+
+{% endif %}
+ 

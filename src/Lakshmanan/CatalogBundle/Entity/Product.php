@@ -240,7 +240,7 @@ class Product
     
     public function __toString() {
      
-        return $this->category->getValues();
+        return $this->getName();
     }
     
     

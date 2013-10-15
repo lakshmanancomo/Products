@@ -23,13 +23,13 @@ class ProductType extends AbstractType
             ->add('brand','entity',array('label'=> 'Brand',
                 'class'=>'LakshmananCatalogBundle:Brand',
                 'property'=>'name',
-                'multiple'=>false,'expanded'=> true))
+                'multiple'=>false,'expanded'=> true                
+                ))
             ->add('category','entity',array('label'=> 'Category',
                  'class'=>'LakshmananCatalogBundle:Category',
                  'property'=>'name',
                  'multiple'=>true,'expanded'=> false          
-                ))    
-        ;
+                )) ;
     }
     
     /**
